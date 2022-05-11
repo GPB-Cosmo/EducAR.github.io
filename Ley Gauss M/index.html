@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducAR-Ley de Gauss para el magnetismo </title>
+    <link rel="icon" href="img/icono.png" type="image/png">
+
+    <!--Utilización del framework Bootstrap para los estilos-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Motor de visualizacion para las formulas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+
+
+
+
+<body class="p-3 mb-2">
+
+    <div class="container  my-3 rounded">
+        <h1 class="text-center text-primary my-1" style="font-size: 60px"> Ley de Gauss para el magnetismo a través de
+            visualizaciones en
+            realidad aumentada </h1>
+    </div>
+
+    <!--Indice-->
+
+    <div class="container-fluid bg-secondary">
+        <div class="row">
+            <nav class="navbar navbar-light bg-secondary mx-auto">
+                <form class="form-inline">
+                    <a class="btn btn btn-primary  btn-lg ml-3 my-1" href="#Teoria" type="button">TEORÍA</a>
+                    <a class="btn btn-primary  btn-lg ml-3 my-1" href="#Instrucciones" type="button">INSTRUCCIONES</a>
+                    <a class="btn btn-primary  btn-lg ml-3 my-1" href="#CodigoColores" type="button">CÓDIGO DE
+                        COLORES</a>
+                    <a class="btn btn-primary btn-lg ml-3 my-1" href="#Visualizaciones"
+                        type="button">VISUALIZACIONES</a>
+
+                </form>
+            </nav>
+        </div>
+    </div>
+    <!--F/indice-->
+    <br>
+    <div class="container">
+        <!--container main-->
+        <div class="container rounded">
+            <div class="container rounded" id="Teoria">
+                <p class="h1 text-center">Teoría</p>
+                <div class="container">
+                    <p class="" style="font-size: 20px">La ley de Gauss para el magnetismo es una de las cuatro
+                        ecuaciones fundamentales del
+                        electromagnetismo. Para llegar a ella, abordaremos primero algunos conceptos que la componen.
+                    </p>
+
+                    <!--Flujo de Campo magnetico-->
+                    <div class="container rounded" id="FlujoDeCampoMagnetico">
+                        <div class="row">
+                            <h3 class="text-center my-3">Flujo de campo magnético</h3>
+                        </div>
+                        <div class="row">
+                            <p class="" style="font-size: 20px"> Se puede definir al flujo del campo magnético
+                                (\(\varPhi_B\), Fi subíndice B), como la
+                                cantidad
+                                de
+                                líneas de campo
+                                magnético
+                                (\(\overrightarrow{B}\)) que atraviesan una superficie (\(A\)).                                                                                            
+                            </p>
+                        </div>
+                        <br>
+                        <!--imagen 1-->
+                        <div class="row justify-content-center">
+                            <div class="card text-center" style="width: 25rem;">
+                                <img src="img/flujo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text" style="font-size: 14px"><em>Figura l. Representación de las
+                                            líneas
+                                            de
+                                            campo
+                                            magnético atravesando perpendicularmente a una superficie plana (flujo
+                                            magnético). El vector en color amarillo, \(d\overrightarrow{A}\), es un
+                                            diferencial del vector de área.</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <p class="" style="font-size: 20px">
+                                El cálculo de \(\varPhi_B\) se realiza con el producto escalar (producto punto) entre el
+                                campo
+                                magnético \(\overrightarrow{B}\)
+                                y
+                                un elemento diferencial de área \(d\overrightarrow{A}\). El resultado se suma, o
+                                integra,
+                                para
+                                todas
+                                las contribuciones
+                                a
+                                través de una superficie(\(A\)). </p>
+
+
+
+                        </div>
+                        <p class="text-center h3">
+                            \begin{equation}
+                            \varPhi_{B} = \int \ \overrightarrow{B} \cdot \ d \overrightarrow{A} \ .
+                            \end{equation}
+
+                        </p>
+
+
+                        <p class="" style="font-size: 20px">
+                            La unidad de medida para \(\varPhi_B\)
+                            es
+                            el
+                            Weber
+                            (\(Wb\)),
+                            equivalente a
+                            (\(\ T ^ 2 \cdot \ m ^ 2 \)).
+                        </p>
+
+                    </div>
+                    <!--fin flujo magnetico-->
+
+
+                    <hr>
+                    <!--Polos magnéticos (monopolos magnéticos)-->
+                    <div class="container" id="PolosMagneticos">
+                        <div class="row">
+                            <h3 class="text-center linea_titule my-3"> Polos Magnéticos </h3>
+
+                            <p class="" style="font-size: 20px">Un dipolo eléctrico está formado por dos cargas
+                                iguales, pero de signos
+                                opuestos,
+                                separadas por cierta distancia; en cambio, un dipolo magnético está formado por dos
+                                polos:
+                                norte
+                                y
+                                sur. Las líneas de campo eléctrico y magnético de los dipolos tienen configuraciones muy
+                                parecidas.
+                            </p>
+                        </div>
+                        <!--imagen 2-->
+                        <br>
+                        <div class="row justify-content-center">
+                            <div class="card text-center" style="width: 25rem;">
+                                <img src="img/comparacion_dipolos.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text" style="font-size: 14px"><em>Figura ll. Representación del campo
+                                            eléctrico y
+                                            magnético generados por un dipolo eléctrico y un imán de barra,
+                                            respectivamente.</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <p class="" style="font-size: 20px">Sin embargo, como podemos observar en la siguiente
+                                figura, al dividir ambos
+                                dipolos,
+                                las
+                                líneas de campo ya no son semejantes. </p>
+                        </div>
+                        <br>
+                        <!--imagen 3-->
+                        <div class="row justify-content-center">
+                            <div class="card text-center" style="width: 25rem;">
+                                <img src="img/comparacion_dos.PNG" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text" style="font-size: 14px"><em>Figura lll. Al partir ambos dipolos
+                                            por
+                                            la
+                                            mitad, se puede observar que las líneas de los campos eléctrico y magnético
+                                            ya
+                                            no
+                                            son
+                                            semejantes.</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+
+                        <div class="row">
+                            <p class="" style="font-size: 20px">En el primer caso, si las cargas eléctricas son
+                                separadas por una distancia
+                                grande,
+                                cada
+                                carga se considera como una carga puntual de signo contrario y con líneas de campo
+                                eléctrico
+                                de
+                                forma radial.
+                                Mientras que, en el caso magnético, si partimos un imán, no obtendremos polos norte y
+                                sur
+                                aislados,
+                                sino un par de nuevos imanes, cada uno con sus propios polos, como se puede ver en la
+                                siguiente
+                                imagen.
+                            </p>
+                        </div>
+
+                        <!--imagen 4-->
+                        <br>
+                        <div class="row justify-content-center">
+                            <div class="card text-center" style="width: 25rem;">
+                                <img src="img/iman_partido.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text" style="font-size: 14px"><em>Figura lV. En un imán que se parte
+                                            por
+                                            la
+                                            mitad, las piezas resultantes son nuevos imanes independientes. Si éstos
+                                            vuelven
+                                            a
+                                            ser
+                                            partidos por la mitad, el resultado será el mismo.</em>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <p class="" style="font-size: 20px">Así, podemos llegar a la conclusión de que las cargas
+                                eléctricas constituyen las unidades fundamentales de la electricidad y el dipolo es la
+                                unidad fundamental de la estructura magnética, pues hasta donde sabemos, el monopolo
+                                magnético no existe.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+                </div>
+
+                <!--ley de Gauss para el magnetismo -->
+                <div class="container" id="LeyDeGaussMagnetismo">
+
+                    <h3> Ley de Gauss para el magnetismo </h3>
+
+                    <p>
+                    </p>
+
+                    <p class="" style="font-size: 20px"> Puesto que los monopolos magnéticos parecen no existir, la
+                        Ley de Gauss para el
+                        Magnetismo establece
+                        que:</p>
+
+                    <br>
+                    <p class="text-center font-italic h4">
+                        “El flujo neto del campo magnético a través de cualquier superficie cerrada es cero.”
+                    </p>
+                    <br>
+
+                    <p class="" style="font-size: 20px"> Y este enunciado está expresado en la siguiente ecuación:</p>
+                    <!--ecuacion ley de gauss-->
+                    <p class="text-center h3">
+                        \begin{equation}
+                        \varPhi_{B} = \oint \ \overrightarrow{B} \cdot \ d \overrightarrow{A} = 0 \ ,
+                        \end{equation}
+                    </p>
+                    <p class="" style="font-size: 20px">donde:</p>
+                    <div class="row">
+                        <!--lista de la formula -->
+                        <ul>
+                            <li>
+                                <p class="" style="font-size: 20px"> \(\varPhi_{B} \) : flujo de campo magnético </p>
+                            </li>
+                            <li>
+                                <p class="" style="font-size: 20px">\(\oint \) : integral de superficie cerrada
+                                    (indica que la función es
+                                    evaluada
+                                    en
+                                    cada punto de la superficie e integrada sobre toda la superficie cerrada.)
+                            </li>
+                            </p>
+                            <li>
+                                <p class="" style="font-size: 20px">\(\overrightarrow{B} \) : campo magnético
+                            </li>
+                            </p>
+                            <li>
+                                <p class="" style="font-size: 20px">\(d\overrightarrow{A} \) : diferencial de área.
+                            </li>
+
+                            <p class="" style="font-size: 20px">La superficie cerrada que se utiliza para realizar esta
+                                integral recibe el nombre de superficie gaussiana.</p>
+                            </p>
+                        </ul>
+                    </div>
+                    <br>
+                    <p class="" style="font-size: 20px">Como vimos, a pesar de que, en el caso del dipolo, las líneas
+                        de campo eléctrico y
+                        magnético
+                        se ven iguales, existe la diferencia de que las fuentes y sumideros del campo magnético parecen
+                        no
+                        existir, lo cual implica que las líneas del campo magnético forman trayectorias cerradas,
+                        este hecho ocasiona a su vez que, sin importar la posición o forma que tenga la superficie
+                        gaussiana, siempre
+                        habrá
+                        la
+                        misma cantidad de líneas entrando y saliendo, así que el flujo siempre será igual a cero, como
+                        se puede ver en la Figura V. Aunque en esta figura las superficies gaussianas aparecen como
+                        figuras planas, más adelante, en la sección Visualizaciones, podrás observarlas en tres
+                        dimensiones y desde diferentes ángulos, con ayuda de la realidad
+                        aumentada. </p>
+                    <br>
+                    <!--imagen 5-->
+                    <div class="row justify-content-center">
+                        <div class="card text-center" style="width: 25rem;">
+                            <img src="img/iman_gauss.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text" style="font-size: 14px"><em>Figura V. Superficies gaussianas
+                                        alrededor de un imán,
+                                        representadas por las áreas de
+                                        color azul claro, que siempre serán atravesadas por el mismo número de líneas
+                                        que
+                                        entran
+                                        y salen, sin importar su forma y posición.</em></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <!--fuentes-->
+            <p style="font-style: italic; font-size: 13px;">
+                Fuentes: <br> 
+                Halliday, D., Resnick, R. y Krane, K. (1999). Física Volumen 2. México: Compañía Editorial
+                Continental.<br>
+                Purcell, E. & Morin, D. (2013). Electricity and magnetism. Estados Unidos de América: Cambridge University Press.
+            </p>
+            <!--fin fuentes-->
+
+
+            <br>
+            <br>
+            <!--Instrucciones Visualizaciones -->
+            <div class="container" id="Instrucciones">
+                <h2 class="linea_titule text-center my-4">Instrucciones para usar las visualizaciones</h2>
+                <p class="" style="font-size: 20px; line-height: 34px;">Para poder observar cualquiera de las
+                    visualizaciones en
+                    realidad aumentada (RA) que aparecen en esta página de internet necesitas contar con:
+                </p>
+                <!--lista de instrucciones-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-white">Marcador, ya sea que decidas imprimirlo o
+                                que
+                                pueda ser visible a través de una pantalla distinta a la que usarás para observar la RA,
+                                puedes descargar el marcador haciendo clic en la imagen</li>
+                            <li class="list-group-item list-group-item-white">Un dispositivo móvil o computadora con
+                                navegador de internet</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-white">Conexión a internet</li>
+                            <li class="list-group-item list-group-item-white">La cámara integrada en tu dispositivo
+                                móvil, laptop o en su caso una
+                                webcam</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="row justify-content-center">
+                    <div align="center">
+                        <a href="https://drive.google.com/file/d/1gOBpPyrdpQYCCzaXdt1xfkYMfFNt-ISg/view?fbclid=IwAR2ZY6och_1lcVxkMgT8c-pCw90wgWoWh6c_XMc0m8hiHkQtBzKeECUvrkY"
+                            target="_blank"> <img class="img_horizo" width="400" height="400"
+                                src="img/marcador.png"></a>
+                    </div>
+                </div>
+                <!--fin lista de instrucciones-->
+                <br>
+                <br>
+                <!--sugerencias-->
+                <p class="" style="font-size: 30px;">Sugerencias:</p>
+                <br>
+                <div class="container">
+                    <div class="container">
+                        <p class="" style="font-size: 20px">Recuerda que tú puedes imprimir el marcador del tamaño que
+                            prefieras, sólo debes
+                            tener
+                            cuidado de
+                            mantenerlo completamente visible durante la visualización. Para obtener el tamaño que te
+                            acomode,
+                            cambia la distancia del marcador a la cámara.</p>
+                        <p class="" style="font-size: 20px">Puedes desplegar las visualizaciones en el dispositivo que
+                            prefieras. Si necesitas
+                            mayor
+                            libertad de
+                            movimiento entre la cámara y el marcador, puedes usar un dispositivo móvil.</p>
+                    </div>
+
+                    <ol>
+                    </ol>
+                </div>
+                <!--fsugerencias-->
+                <br>
+                <!--pasos-->
+                <div class="sec_left">
+                    <p class="" style="font-size: 30px;">Los pasos a seguir son los siguientes:</p>
+                    <br>
+                    <ol>
+                        <li class="num_list">Haz clic en el enlace a la visualización en RA que te interesa observar
+                        </li>
+                        <li class="num_list">
+                            Si la cámara o webcam no se activa automáticamente, selecciona la opción "Permitir usar la
+                            cámara" cuando el navegador de internet lo solicite"
+                            <a target="?_blank"
+                                href="https://drive.google.com/file/d/1v4Goh4Ymsv3HiomuIxZOtEhYVYaMAzQX/view?fbclid=IwAR1fDqq3elwIH0F2wJGVTn7Fjlv5bgDEs1GjseEBFGT5XNTT9whdsJWJkfg"><span>haz
+                                    clic aquí para ver una imagen de ejemplo de este paso</span></a>
+
+                        </li>
+                        <li class="num_list">
+                            Cuando la cámara o webcam comience a funcionar, coloca el marcador frente a ella para que
+                            sea
+                            reconocido
+                        </li>
+                        <li class="num_list">
+                            Una vez reconocido el marcador, podrás observar la visualización en RA
+                        </li>
+                        <li class="num_list">
+                            Puedes colocar el marcador frente a la cámara en distintas posiciones, acercarlo, alejarlo o
+                            girarlo de tal forma que puedas observar distintas partes o detalles en cada visualización
+                        </li>
+                        <li class="num_list">
+                            En las visualizaciones, indicamos con letras las cantidades físicas que representamos, pero
+                            para
+                            obtener un panorama más completo de estas cantidades puedes usar el "Código de colores".
+                        </li>
+                    </ol>
+                </div>
+                <!--fin pasos-->
+            </div>
+            <!--fin Instrucciones-->
+            <br>
+
+            <!--codigo de colores-->
+            <div class="container" id="CodigoColores">
+                <section class="main-section" id="CodigoColor">
+                    <h2 class="linea_titule text-center">Código de colores</h2>
+                    <div class="container">
+                        <div>
+                            <p class="" style="font-size: 20px">Para entender las visualizaciones, es necesario
+                                conocer el significado de los
+                                colores en los
+                                elementos representados, usa el siguiente código de colores:</p>
+
+
+                            <div align="center">
+                                <img class="img_horizo" width="790" height="600" src="img/codigo_colores.png">
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <!--fin codigo de colores-->
+
+            <!--Visualizaciones-->
+            <div class="container" id="Visualizaciones">
+                <p class="h2 text-center">Visualizaciones</p>
+                <div class="container">
+                    <p class="" style="font-size: 20px">Estas visualizaciones forman parte del proyecto EducAR, y su
+                        objetivo es facilitar a
+                        los
+                        estudiantes de Ingeniería en Computación el entendimiento de la Ley de Gauss para el magnetismo
+                        utilizando Realidad
+                        Aumentada. Todas las visualizaciones funcionan con un mismo marcador.</p>
+                </div>
+                <br>
+                <!--lista de visualizaciones-->
+                <ul>
+                    <li><a target="_blank" href="https://dipolo-magnetico.glitch.me/">
+                            <p style="color: black; font-size: 18px;"> <u> Dipolo magnético (imán).</p></u>
+                        </a>
+                        <p style="font-size: 15px;">Representación de un imán en forma de barra, en el que se puede
+                            observar que sus líneas de campo magnético siempre van a formar trayectorias cerradas.</p>
+                    </li>
+                    <li><a target="_blank" href="https://comparacion-dipolos.glitch.me/">
+                            <p style="color: black; font-size: 18px;"> <u> Comparación de dipolos.</p></u>
+                        </a>
+                        <p style="font-size: 15px;">Representación de las líneas de fuerza de un dipolo eléctrico y
+                            uno magnético, colocados lado a lado, nos muestran la similitud entre los campos eléctrico y
+                            magnético, a este nivel.</p>
+                    </li>
+                    <li><a target="_blank" href="https://iman-partido.glitch.me/">
+                            <p style="color: black; font-size: 18px;"> <u> Imán partido por la mitad.</p></u>
+                        </a>
+                        <p style="font-size: 15px;">El resultado de este corte no es un polo norte y un polo sur
+                            aislados, sino dos imanes, cada uno con su polo norte y sur. Este resultado se repite hasta
+                            el
+                            nivel de un solo átomo. Por lo anterior, el monopolo magnético, equivalente a una “carga
+                            magnética”, no parece existir.
+                            Por otro lado, en el dipolo eléctrico, si ambas cargas son separadas por una distancia
+                            considerable, cada carga se considera como una carga puntual de signo contrario y con líneas
+                            de campo eléctrico de forma radial.</p>
+                    </li>
+                    <li><a target="_blank" href="https://iman-con-superficies.glitch.me/">
+                            <p style="color: black; font-size: 18px;"> <u>Imán con superficies gaussianas.</p></u>
+                        </a>
+                        <p style="font-size: 15px;">Al colocar superficies cerradas de diferentes formas, en
+                            diferentes regiones alrededor del imán, podemos notar que, sin importar su posición, las líneas de
+                            campo magnético siempre van a entrar y salir de la superficie, por lo anterior, la ley de
+                            Gauss
+                            para el magnetismo nos dice que el flujo neto del campo magnético a través de cualquier
+                            superficie cerrada es cero.
+                            Esto es consecuencia de que el monopolo magnético no existe.</p>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!--Link de la app-->
+            <br>
+            <p class="" style="font-size: 20px">También encontrarás las mismas visualizaciones en unas
+                aplicaciones que desarrollamos y presentamos en el recurso Apps EducAR, con la
+                ventaja de que, con ellas, no necesitas conexión a internet. Puedes acceder a la página haciendo clic en
+                la siguiente imagen.</p>
+
+            <br>
+
+            <!--Logo educar-->
+            <div align="center">
+                <a href="../Apps/index.html" target="_blank"> <img class="img_horizo" width="728" height="408"
+                        src="img/educar - Imgur.gif"></a>
+            </div>
+
+            <!--fin Visualizaciones-->
+            <br>
+            <br>
+            <br>
+            <hr>
+
+
+            <hr>
+
+            <!--Contacto-->
+            <div class="container">
+                <h2 class="text-center">Información de Contacto</h2>
+                <br>
+                <div class="row">
+                    <div class="col-4 text-right my-3">
+                        <p>DIRECCIÓN:</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="">Centro Tecnológico Aragón, segundo piso, Cubículos académicos 2, Cubículo 4,
+                            Facultad
+                            de
+                            Estudios Superiores Aragón, Universidad Nacional Autónoma de México, Avenida Rancho Seco
+                            S/N,
+                            Col. Impulsora Popular Avícola, Nezahualcóyotl, Estado de México 57130, México.</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-left">
+                            <a
+                            target="_blank" href="https://www.facebook.com/cosmocta/?view_public_for=1819870644983707&ref=page_internal"><img
+                                    src="img/f.png" width="50" height="50" class="rounded" alt="..."></a>
+                            <a target="_blank" href="https://gpb-cosmo.github.io/person/index.html"><img
+                                    src="img/doc.PNG" width="59" height="58" class="rounded" alt="..."></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin contacto-->
+
+
+            <!--Creditos-->
+            <div class="container py-5">
+                <p class="h2 text-center">Créditos</p>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto text-center">
+                        <div class="card text-center" style="width: 20rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Gabriella Piccinelli Bocchi:</h5>
+                                <p class="card-text">Responsable académica, supervisión del contenido científico y
+                                    de la
+                                    construcción de los materiales
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto text-center">
+                        <div class="card text-center" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Pedro Uriel Martínez Martínez:
+                                </h5>
+                                <p class="card-text">Idea original de la plataforma y supervisión de su construcción
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto text-center">
+                        <div class="card text-center" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">René Jesús Pineda Angeles:</h5>
+                                <p class="card-text">Información sobre la ley de Gauss para el magnetismo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto text-center">
+                        <div class="card text-center" style="width: 24rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Alan Sandoval Almaraz y Gerardo Ángel Casillas Araiza:</h5>
+                                <p class="card-text">Información sobre la ley de Gauss para el magnetismo,
+                                    construcción
+                                    de la plataforma, elaboración de los modelos en 3D y las visualizaciones en
+                                    realidad
+                                    aumentada e incorporación de las visualizaciones a páginas web
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- fin Creditos-->
+
+            <hr>
+
+
+
+
+        </div>
+    </div>
+    <!--fin container main-->
+
+    <!--Pie de la Pagina-->
+    <footer align="center" style="background-color: black">
+        <div class="container text-light" style="background-color: black">
+            <br>
+            <h3 href="https://gpb-cosmo.github.io/EducAR.github.io/">
+                ​​​​Recurso desarrollado con el apoyo del proyecto UNAM-DGAPA-PAPIME PE110418 "Realidad aumentada en la docencia para ingeniería"
+            </h3>
+
+            <img class="img-fluid maxheight: auto text-center" alt="Responsive image" width="600" height="124"
+                src="img/pie.png">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            </a>
+            <br><span> Este obra está bajo una </span>
+            <a class="text-light" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licencia
+                de Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional</a>.
+        </div>
+    </footer>
+
+
+    <!--Scripts para el funcionamiento de Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

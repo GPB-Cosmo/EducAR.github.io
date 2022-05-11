@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps EducAR</title>
+    <link rel="stylesheet" type="text/css" href="css/style - copia.css">
+    <link rel="icon" href="img/icono.png" type="image/png">
+
+
+    <!--Utilización del framework Bootstrap para los estilos-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Motor de visualizacion para las formulas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+
+<body class="p-3 mb-2">
+    <div class="container  my-3 rounded">
+        <h1 class="text-center text-primary my-1" style="font-size: 60px"> Aplicaciones EducAR para el estudio del
+            magnetismo</h1>
+    </div>
+    <br>
+    <!--Main container-->
+    <div class="container">
+
+
+        <div class="row justify-content-md-center">
+            <div class="col-md">
+                <!--APP-->
+                <div class="container" id="APP">
+
+
+                    <!--Primeros parrafos-->
+                    <p style="font-size: 20px;">Ponemos a disposición de estudiantes, profesores y lectores en general,
+                        un par de aplicaciones
+                        (apps) de realidad aumentada para dispositivos móviles, con información acerca de la ley de
+                        Ampère y la ley de Gauss para el magnetismo. Las pueden descargar, instalar y usar libremente
+                        durante sus clases. </p>
+                    <br>
+
+                    <p style="font-size: 20px;">La app EducAR funciona sin un marcador impreso, a diferencia de la app
+                        EducARv. Para poderla instalar, se requieren dispositivos
+                        que cuenten con ciertas características, que aclaramos en los Requisitos. </p>
+                    <br>
+
+                    <p style="font-size: 20px;">La ventaja de estas apps es que puedes usarlas sin que tu dispositivo
+                        cuente con conexión a
+                        internet, esperamos que esta característica mejore tu experiencia al utilizarlas mientras
+                        estudias. Finalmente, para descargar e instalar estas apps no necesitas llenar ningún
+                        formulario de registro, ni proporcionarnos tus datos personales, puedes descargarla de manera
+                        directa. </p>
+                    <!--Fin de parrafos-->
+
+                    <div class="row">
+                        <div class="col">
+                            <p class="h6 text-center" style="font-size: 20px;"> EducAR</p>
+                            <br>
+                            <p class="text-center" style="font-size: 18px;"> • No requiere marcador</p>
+                        </div>
+                        <div class="col text-center">
+                            <p class="h6 text-center" style="font-size: 20px;"> EducARv</p>
+                            <br>
+                            <p class="" style="font-size: 18px;"> • Requiere marcador</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <!--acordion-->
+                    <!--requisitos-->
+                    <div id="accordion">
+                        <div class="card bg-ligth">
+                            <div class="card-header" id="headingThree">
+                                <p class="mb-0 text-center text-secondary h5" style="font-size: 25px;">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <p class="h5">Requisitos</p>
+                                    </button>
+                                </p>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <br>
+                                            <p class="text-center" style="font-size: 18px;"> • Compatibilidad con ARCore
+                                                a
+                                                través de
+                                                Google
+                                                Play Services para AR
+                                                <a target="_blank" href="https://developers.google.com/ar/discover/supported-devices">(Para
+                                                    mayor
+                                                    información al
+                                                    respecto da clic)</a>
+                                            </p>
+                                            <p class="text-center" style="font-size: 18px;"> • Android mínimo 8.0 </p>
+                                            <p class="text-center" style="font-size: 18px;"> • Cámara </p>
+                                        </div>
+                                        <div class="col text-center">
+                                            <br>
+                                            <p class="text-center" style="font-size: 18px;"> • Android mínimo 4.1.x </p>
+                                            <p class="text-center" style="font-size: 18px;"> • Cámara </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--   Descargar -->
+                        <div class="card bg-ligth">
+                            <div class="card-header" id="headingThree">
+                                <h3 class="mb-0 text-center text-secondary" style="font-size: 25px;">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapse4" aria-expanded="false" aria-controls="collapseThree">
+                                        <p class="h5"> Descarga </p>
+                                    </button>
+                                </h3>
+                            </div>
+                            <div id="collapse4" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="col align-self-center">
+                                        <br>
+                                        <p class="text-center" style="font-size: 18px;">La aplicación se instala por
+                                            medio de una archivo con formato .apk, la instalación de una aplicación
+                                            por este medio varía dependiendo de la versión de Android de tu
+                                            dispositivo o de la marca a la que pertenece, pero en general solo es
+                                            necesario descargar el archivo del enlace, abrirlo y otorgar los
+                                            permisos que el sistema te pueda solicitar.
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <br>
+                                            <p class="text-center" style="font-size: 18px;">
+                                                <a target="_blank" href="https://drive.google.com/file/d/1BvZE2SrRqlO9a5xWpNUTS9Uf-HNdu7jq/view?usp=sharing">Link
+                                                    de descarga EducAR</a>
+                                            </p>
+
+                                        </div>
+                                        <div class="col text-center">
+                                            <br>
+                                            <p class="text-center" style="font-size: 18px;">
+                                                <a target="_blank" href="https://drive.google.com/file/d/1KNS2Zdmj_zAzRkWAvBqAcBQTy2Z2TbgI/view?usp=sharing">Link
+                                                    de descarga EducARv</a>
+                                            </p>
+                                            <!--   <p class="text-center" style="font-size: 18px;">
+                                                Marcador
+                                            </p>
+                                            <a href="" target="_blank"> <img class="img_horizo" width="250"
+                                                    height="250" src="img/marcadorAPP.png"></a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--instrucciones de uso-->
+                        <div class="card bg-ligth">
+                            <div class="card-header" id="heading1">
+                                <p class="mb-0 text-center text-secondary" style="font-size: 25px;">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapse3" aria-expanded="false" aria-controls="collapse2">
+                                        <p class="h5"> Instrucciones de uso </p>
+                                    </button>
+                                </p>
+                            </div>
+                            <div id="collapse3" class="collapse" aria-labelledby="heading1" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <p class="" style="font-size: 18px;">
+                                            Las siguientes instrucciones son aplicables a nuestras dos apps, más
+                                            adelante encontrarás instrucciones específicas para usar cada app.
+                                        </p>
+                                        <p class="" style="font-size: 18px;">
+                                            Al abrir la aplicación, después de las pantallas de presentación, se
+                                            mostrará el
+                                            menú “Índice”, aquí podrás dar clic al botón del tema al cual deseas
+                                            acceder.
+                                        </p>
+                                        <p class="" style="font-size: 18px;">
+                                            A continuación, se presentará el submenú del tema que seleccionaste con los
+                                            botones de las visualizaciones que le corresponden. </p>
+                                        <p class="" style="font-size: 18px;">
+                                            Cuando accedas a una visualización, se te solicitará dar permiso a la
+                                            aplicación
+                                            para que use la cámara de tu dispositivo, para que la aplicación funcione
+                                            correctamente es necesario otorgar este permiso (este proceso solo es
+                                            necesario
+                                            realizarlo la primera vez que uses la aplicación).</p>
+                                        <p class="" style="font-size: 18px;">
+                                            Dentro de la pantalla de la visualización, encontrarás dos botones: </p>
+                                        <p class="" style="font-size: 18px;">
+                                            Colores: al darle clic, desplegará una “tarjeta” con el significado de los
+                                            colores usados en la
+                                            visualización. Para ocultar la “tarjeta” haz clic una vez más sobre
+                                            el
+                                            botón. </p>
+                                        <p class="" style="font-size: 18px;">
+                                            Detalles: al darle clic, desplegará una “tarjeta” con una breve descripción
+                                            de
+                                            lo
+                                            que la visualización está representando. Para ocultar la “tarjeta” haz clic
+                                            una
+                                            vez más sobre el botón.
+                                        </p>
+                                        <p class="" style="font-size: 18px;">
+                                            A continuación, se muestran instrucciones específicas sobre cómo usar cada
+                                            APP.
+                                        </p>
+
+
+                                    </div>
+                                    <br>
+                                    <!--instrucciones de uso Vuforia-->
+                                    <div class="row">
+                                        <p class="h6 text-center" style="font-size: 18px;"> EducARv</p>
+                                    </div>
+                                    <div class="row">
+                                        <ol>
+                                            <li>
+                                                <p class="" style="font-size: 18px;"> Haz clic en el botón de la
+                                                    visualización
+                                                    en RA que te interesa observar. </p>
+                                            </li>
+                                            <li>
+                                                <p class="" style="font-size: 18px;"> Cuando la cámara de tu dispositivo
+                                                    comience a
+                                                    funcionar, coloca el marcador frente a ella para que sea reconocido.
+                                                </p>
+                                            </li>
+                                            <!--marcador imagen-->
+                                            <div class="col text-center">
+                                                <a target="_blank" href="https://drive.google.com/file/d/1vsVlMed06ualPqra7oUUgUk-thuUgp-b/view?usp=sharing" target="_blank"> <img class="img_horizo" width="250"
+                                                        height="250" src="img/marcadorAPP.PNG"></a>
+                                            </div>
+                                            <li>
+                                                <p class="" style="font-size: 18px;"> Una vez reconocido el marcador,
+                                                    podrás
+                                                    observar la visualización en RA. </p>
+                                            </li>
+                                            <li>
+                                                <p class="" style="font-size: 18px;">Puedes colocar el marcador frente a
+                                                    la
+                                                    cámara en distintas posiciones, acercarlo, alejarlo o girarlo de tal
+                                                    forma que
+                                                    puedas
+                                                    observar distintas partes o detalles en cada visualización.</p>
+                                            </li>
+                                            <li>
+                                                <p class="" style="font-size: 18px;">En las visualizaciones, indicamos
+                                                    con
+                                                    letras
+                                                    las cantidades físicas que representamos, pero para obtener un
+                                                    panorama
+                                                    más completo
+                                                    de
+                                                    estas cantidades puedes usar el botón de "Código ".
+
+                                                </p>
+                                            </li>
+
+                                        </ol>
+                                    </div>
+
+                                    <!--instrucciones ARfoundation-->
+                                    <div class="row">
+                                        <p class="h6 text-center" style="font-size: 18px;"> EducAR</p>
+                                    </div>
+                                    <div class="row">
+                                        <ol>
+                                            <li>
+                                                <p class="" style="font-size: 18px;"> Haz clic en el botón de la
+                                                    visualización
+                                                    en RA que te interesa observar. </p>
+                                            </li>
+                                            <li>
+                                                <p class="" style="font-size: 18px;">Cuando la cámara del dispositivo
+                                                    comience a funcionar, mueve levemente tu dispositivo de izquierda a
+                                                    derecha, esto es para ayudar a la aplicación a reconocer la
+                                                    superficie
+                                                    (recomendamos ampliamente usar una superficie lo más uniforme
+                                                    posible).
+                                                    Cuando la aplicación reconozca la superficie plana, aparecerá un
+                                                    círculo
+                                                    cuyo perímetro es de color verde y al dar clic en el botón “Mostrar”
+                                                    la
+                                                    visualización 3D, se mostrará en la ubicación del círculo verde.</p>
+                                            </li>
+                                            <li>
+                                                <p class="" style="font-size: 18px;">Puedes mover el dispositivo en
+                                                    distintas posiciones, acercarlo, alejarlo o girarlo de tal forma que
+                                                    puedas observar distintas partes o detalles en cada visualización.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="" style="font-size: 18px;">En las visualizaciones, indicamos
+                                                    con letras las cantidades físicas que representamos, pero para
+                                                    obtener
+                                                    un panorama más completo de estas cantidades puedes usar el botón de
+                                                    "Código".</p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <!--fin acordion-->
+                </div>
+                <!--FIN APP-->
+                <br>
+                <!--Links a las paginas-->
+                <br>
+                <br>
+                <p style="font-size: 20px;">Las mismas visualizaciones que se encuentran en ambas apps, están
+                    disponibles en otros recursos
+                    de la Red Universitaria de Aprendizaje de la UNAM, con más información científica.
+                    Te invitamos a consultarlas a través de los siguientes enlaces: </p>
+
+                <br>
+
+
+                <div class="row justify-content-center">
+                    <div class="col justify-content-center">
+                        <a target="_blank" href="https://gpb-cosmo.github.io/EducAR.github.io/Ampere/" type="button"
+                            class="btn btn-outline-primary  btn-block btn-lg">Ley
+                            de Ampère</a>
+                        <br>
+
+                        <a target="_blank" href="../Ley_Gauss_M/index.html" type="button" class="btn btn-outline-primary  btn-block btn-lg">Ley
+                            de Gauss para el campo magnético
+                        </a>
+                    </div>
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <!--Contacto-->
+                <div class="container">
+                    <h2 class="text-center">Información de Contacto</h2>
+                    <br>
+                    <div class="row">
+                        <div class="col-4 text-right my-3">
+                            <p>DIRECCIÓN:</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="">Centro Tecnológico Aragón, segundo piso, Cubículos académicos 2, Cubículo 4,
+                                Facultad
+                                de
+                                Estudios Superiores Aragón, Universidad Nacional Autónoma de México, Avenida Rancho Seco
+                                S/N,
+                                Col. Impulsora Popular Avícola, Nezahualcóyotl, Estado de México 57130, México.</p>
+                        </div>
+                        <div class="col-4">
+                            <div class="text-left">
+                                <a
+                                target="_blank" href="https://www.facebook.com/cosmocta/?view_public_for=1819870644983707&ref=page_internal"><img
+                                        src="img/f.png" width="50" height="50" class="rounded" alt="..."></a>
+                                <a target="_blank" href="https://gpb-cosmo.github.io/person/index.html"><img
+                                        src="img/doc.PNG" width="59" height="58" class="rounded" alt="..."></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin contacto-->
+
+                <!--Creditos-->
+                <div class="container py-5">
+                    <p class="h2 text-center">Créditos</p>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-auto text-center">
+                            <div class="card text-center" style="width: 20rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gabriella Piccinelli Bocchi:</h5>
+                                    <p class="card-text">Responsable académica, supervisión del contenido científico y
+                                        de la
+                                        construcción de los materiales
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-auto text-center">
+                            <div class="card text-center" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pedro Uriel Martínez Martínez:
+                                    </h5>
+                                    <p class="card-text">Supervisión de la construcción de los materiales
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-auto text-center">
+                            <div class="card text-center" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">René Jesús Pineda Angeles:</h5>
+                                    <p class="card-text">Información sobre la ley de Gauss para el magnetismo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-auto text-center">
+                            <div class="card text-center" style="width: 24rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alan Sandoval Almaraz y Gerardo Ángel Casillas Araiza:</h5>
+                                    <p class="card-text">Información sobre la ley de Gauss para el magnetismo,
+                                        elaboración de los modelos en 3D y construcción de las aplicaciones
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- fin Creditos-->
+            </div>
+        </div>
+
+    </div>
+    <!--Fin main container-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Pie de la Pagina-->
+    <footer align="center" style="background-color: black">
+        <div class="container text-light" style="background-color: black">
+            <br>
+            <h3>
+                Aplicaciones realizadas con el apoyo del Programa UNAM-DGAPA-PAPIME PE110418
+            </h3>
+
+            <img class="img-fluid maxheight: auto text-center" alt="Responsive image" width="600" height="124"
+                src="img/pie.png">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            </a>
+            <br><span> Este obra está bajo una </span>
+            <a class="text-light" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licencia
+                de Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional</a>.
+        </div>
+    </footer>
+
+    <!--Scripts para el funcionamiento de Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
