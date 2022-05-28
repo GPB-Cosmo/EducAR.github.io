@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducAR-La ley de Gauss y sus aplicaciones a través de realidad aumentada</title>
+    <link rel="icon" href="img/icono.png" type="image/png">
+
+    <!--Utilización del framework Bootstrap para los estilos-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Motor de visualizacion para las formulas -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+<body class="p-3 mb-2">
+
+    <div class="container  my-3 rounded">
+        <h1 class="text-center text-primary my-1" style="font-size: 60px"> La ley de Gauss y sus aplicaciones a través de
+            realidad aumentada </h1>
+    </div>
+
+    <!--Indice-->
+
+    <div class="container-fluid bg-secondary">
+        <div class="row">
+            <nav class="navbar navbar-light bg-secondary mx-auto">
+                <form class="form-inline">
+                    <a class="btn btn btn-primary  btn-lg ml-3 my-1" href="#LaleydeGauss" type="button">La ley de Gauss</a>
+                    <a class="btn btn-primary  btn-lg ml-3 my-1" href="#Instrucciones" type="button">Instrucciones</a>
+                    <a class="btn btn-primary  btn-lg ml-3 my-1" href="#CodigoColores" type="button">Código de colores</a>
+                    <a class="btn btn-primary btn-lg ml-3 my-1" href="#Visualizaciones"
+                        type="button">Visualizaciones</a>
+
+                </form>
+            </nav>
+        </div>
+    </div>
+    <!--F/indice-->
+    <br>
+    <div class="container">
+        <!--container main-->
+        <div class="container rounded">
+
+            <div class="container rounded" id="LaleydeGauss">
+                <p class="h1 text-center">Breve descripción de la ley de Gauss y sus aplicaciones</p>
+                <div class="container">
+
+                    <p class="" style="font-size: 20px; color:#777777;">La ley de Gauss para la electricidad es una de las ecuaciones de Maxwell, 
+                        que son las ecuaciones fundamentales del electromagnetismo. <br>
+                        Su enunciado es:<br></p>
+
+                        <p class="" style="font-size: 20px; color:#777777;" align="center"><i>
+                            El flujo eléctrico neto a través de cualquier superficie cerrada hipotética es proporcional a la carga 
+                            eléctrica neta encerrada por dicha superficie.<br>
+                        </i></p>                        
+                            <p class="" style="font-size: 20px; color:#777777;" >
+                                A continuación, para comprender esta ley y poder aplicarla, profundizaremos en cada concepto que interviene en ella:<br>
+                    </p>
+
+                    <div class="row">                        
+                        <ul style="color:#777777; line-height:normal;">
+                            <li>
+                                <p class="" style="font-size: 20px; color:#777777;">Campo eléctrico </p>
+                            </li>
+                            <li>
+                                <p class="" style="font-size: 20px; color:#777777;"> Vectores de área
+                            </li>
+                            </p>
+                            <li>
+                                <p class="" style="font-size: 20px; color:#777777;">Flujo
+                            </li>
+                            </p>
+                            <li>
+                                <p class="" style="font-size: 20px; color:#777777;">Flujo del campo eléctrico
+                            </li>
+                            <li>
+                                <p class="" style="font-size: 20px; color:#777777;">Superficies cerradas
+                            </li>                            
+                            <li>
+                                <p class="" style="font-size: 20px; color:#777777;">Flujo neto
+                            </li>                            
+                        </ul>
+                    </div>
+                    <p class="" style="font-size: 20px; color:#777777;" >
+                        Con esto, podremos construir la ley de Gauss y mostrar algunas aplicaciones sencillas.
+            </p>
+
+                    <!--El campo eléctrico-->
+                    <div class="container rounded" id="">
+                        <div class="row">
+                            <h3 class="text-center my-3">El campo eléctrico \( \vec{E} \)</h3>
+                        </div>
+                        <div class="row">
+                            <p class="" style="font-size: 20px; color:#777777;">
+                                En una región del espacio donde esté presente un conjunto de cargas eléctricas se
+                                modifican las características de dicho espacio, estableciendo un campo vectorial al 
+                                que llamamos campo eléctrico \( \vec{E} \). Éste se define en términos de la fuerza 
+                                \( \vec{F} \) que ejercen dichas cargas sobre una carga de prueba positiva \( q_{0} \):                                
+                            </div>
+                    
+                                <!--ecuacion 1-->
+                    <p class="text-center h3" style="font-size: 20px; color:#777777;">
+                        \begin{equation} \tag{1}                        
+                         \vec{E}=\frac{\vec{F}}{q_{0}}.                          
+                         \end{equation}
+                    </p>
+
+                    <div class="row">                                
+                                <p class="" style="font-size: 20px; color:#777777;"> 
+                                    Podemos representar el campo eléctrico de dos formas: usando vectores de campo 
+                                    o líneas de fuerza. En la Figura I, observamos dichas representaciones para el 
+                                    caso del campo alrededor de una carga puntual positiva, el cual es radial y tiene simetría
+                                    esférica. En I(\( a \)), vemos vectores
+                                    (flechas azules) que indican la magnitud, dirección y sentido del campo en cada punto
+                                     alrededor de la carga, consecuentemente, son de mayor longitud cuando el
+                                      campo es más intenso (cerca de la carga) y disminuyen su longitud conforme el
+                                       campo es más débil (lejos de la carga).  En cambio, al usar líneas de fuerza
+                                        (líneas moradas en la Figura I (\( b \))), observamos la dirección y sentido, pero 
+                                        perdemos la longitud del vector. En este caso, la cantidad de líneas por unidad 
+                                        de área de sección transversal es la que nos proporciona información 
+                                        acerca de la magnitud del campo: la distancia entre líneas es menor cuando el campo es 
+                                        intenso y mayor cuando es más débil.
+                                    </p>                                                            
+                        </div>
+                    </div>
+                        
+                        <!--Figura 1-->
+                        <div class="row justify-content-center">
+                            <div class="card text-center" style="width: 50rem;">
+                                <img src="img/Figura I.svg" class="card-img-top" alt="..."> 
+                                <div class="card-body"> 
+                                    <p class="card-text" style="font-size: 14px; color:#777777;"><i>
+                                        Figura l. El campo eléctrico generado por una carga puntual de signo positivo 
+                                        es representado en el plano \(xy\) por \( (a) \) vectores y \( (b) \) líneas de fuerza.</i>
+                                    </p>
+                                </div>                                
+                            </div>
+                        </div>                                                
+                    <!--fin campo eléctrico-->
+                    
+                    <!-- Vectores de área -->
+                    <div class="container rounded" id="">
+                        <div class="row">
+                            <h3 class="text-center linea_titule my-3"> Vectores de área \( \vec{A} \) y diferenciales de área \( d\vec{A} \)</h3>
+
+                            <p class="" style="font-size: 20px; color:#777777;">
+                                Podemos representar cualquier área \( A \)  por medio de un vector de área \( \vec{A} \),
+                                con magnitud igual a \( A \) y dirección ortogonal a la misma.
+                                <br>
+                                Cuando una superficie no es plana, la dirección normal cambia de un punto a
+                                 otro, en ese caso debemos descomponerla en superficies infinitamente pequeñas y definir 
+                                 un vector diferencial de área \( d\vec{A} \) para cada una. Podemos observar estos vectores 
+                                 en la Figura II con color anaranjado y amarillo, respectivamente.
+                            </p>
+                        </div>
+
+                        <!--Figura 2-->                        
+                        <div class="row justify-content-center">
+                            <div class="card text-center" style="width: 37.5rem;">
+                                <img src="img/Figura II.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text" style="font-size: 14px; color:#777777;"><em>Figura ll. 
+                                        A la izquiera, un segmento de superficie plana con su vector de área \( \vec{A} \)
+                                        y a la derecha una superficie curva con segmentos diferenciales de área, en los que se muestran 
+                                        tres vectores \( d\vec{A} \).
+                                        </em>
+                                    </p>
+                                </div>                                
+                            </div>
+                        </div>
+                        <br>
+                        
+                <!--El flujo-->
+                <div class="container rounded" id=""> <!--REVISAR CORRESPONDENCIA DE LOS IDs-->
+                    <div class="row">
+                    <h3> El flujo \( \Phi \)</h3>
+                    
+                    <p class="" style="font-size: 20px; color:#777777;"> 
+                        El flujo \( \Phi \) es una medida de una cantidad
+                         física que atraviesa una superficie, real o
+                          imaginaria, en un tiempo determinado. Por definición,
+                           el flujo es el producto escalar entre un vector 
+                           de campo y un vector de área. 
+                           <br>
+                           Para entender mejor este concepto, y dado que
+                            este material se relaciona con Electricidad y
+                             Magnetismo, consideremos como ejemplo el flujo del campo eléctrico.</p>
+                </div>
+                </div>
+                    <!--El flujo del campo eléctrico-->
+                <div class="container" id=""> 
+                    <div class="row">
+                    <h3> El flujo del campo eléctrico \( \Phi_{E} \)</h3>
+                    
+                    <p class="" style="font-size: 20px; color:#777777;"> 
+                        En el caso del flujo eléctrico, la cantidad física que atraviesa 
+                        una superficie es el campo eléctrico y se define como:
+                    </p>
+                    </div>
+                </div>
+
+                    <!--ecuacion 2-->
+                    <p class="text-center h3" style="font-size: 20px; color:#777777;">
+                        \begin{equation} \tag{2}
+                        \Phi_{E}=\int \vec{E}\cdot d\vec{A}.
+                        \end{equation}
+                    </p>
+
+                    <div class="container" id=""> 
+                    <div class="row">
+                        <p class="" style="font-size: 20px; color:#777777;">
+                            Esta ecuación expresa que el flujo total a través de una superficie
+                            \( A \) es la suma de los flujos a través de cada superficie infinitesimal \( dA \).
+                            <br>
+                            De manera intuitiva, el flujo del campo eléctrico es proporcional a la cantidad de
+                             líneas de fuerza que atraviesan una superficie, como podemos observar en la 
+                             <a target="_blank" href="https://1campou-plano.glitch.me/">visualización del flujo de un campo eléctrico uniforme a través de un plano</a>.
+                            <br>
+                            Con ayuda de la Figura III, podemos formarnos una idea del flujo del campo eléctrico a través de algunas superficies,
+                            en las dos posibles representaciones del campo eléctrico generado por una carga puntual positiva.
+                            En \( (a) \), podemos ver el 
+                            significado de la Ec. 2, y \( (b) \) muestra las líneas de fuerza que atraviesan la misma 
+                            superficie con diferentes orientaciones y una superficie más grande. Como podemos 
+                            apreciar, el flujo dependerá del tamaño de la superficie y de su inclinación 
+                            con respecto a las líneas de fuerza.
+
+                        </p>
+                        </div>
+                    </div>
+
+                        <!--Figura 3-->                        
+                        <div class="row justify-content-center">
+                            <div class="card text-center" style="width: 50rem;">
+                                <img src="img/Figura III.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text" style="font-size: 14px; color:#777777;"><em>Figura lll.
+                                        Para una carga puntual positiva, se muestran en el plano \(xy\), en                                          
+                                        \( (a) \) vectores de campo eléctrico (flechas azules) y vectores diferenciales de área \(d\vec{A}\) (flechas amarillas), y en \( (b) \) líneas de fuerza. En ambos casos, se 
+                                        representa el flujo del campo eléctrico a través de superficies de color 
+                                        verde semitransparente. 
+                                        </em>
+                                    </p>
+                                </div>                                
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <!--Superficies cerradas-->
+                        <div class="container" id=""> 
+                            <div class="row">
+                            <h3>Superficies cerradas</h3>                            
+                            <p class="" style="font-size: 20px; color:#777777;">
+                                Podemos pensar en una superficie cerrada como aquella que encierra un volumen y,  
+                                en muchos casos, esto se puede lograr uniendo varias superficies abiertas. Por ejemplo, podemos encerrar
+                                un cubo por seis superficies cuadradas, como las
+                                 caras de un dado; una superficie cilíndrica se compone de dos tapas con forma de disco 
+                                 y una pared cilíndrica     que, al extenderse, tendrá forma rectangular; finalmente, podemos considerar  
+                                 que una superficie esférica está compuesta por muchas superficies cuadradas 
+                                 pequeñas, similares a los espejos en una bola disco.
+                                 <br>
+                                 Por convención, cualquier vector \( \vec{A} \) o \( d\vec{A} \) de una 
+                                 superficie cerrada siempre apunta hacia afuera de ella, como se muestra
+                                  en la Figura IV para superficies en forma de cubo, cilindro y esfera, respectivamente.
+                            </p>
+                            </div>
+                        </div>
+        
+                        <!--Figura IV-->
+                        <div class="row justify-content-center">
+                            <div class="card text-center" style="width: 50rem;">
+                                <img src="img/Figura IV.svg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text" style="font-size: 14px; color:#777777;"><em>Figura lV. 
+                                        Tres diferentes superficies cerradas semitransparentes en forma de cubo, cilindro y esfera. Sobre las superficies del cubo se muestran seis vectores de área
+                                        \( \vec{A} \), uno para cada una de sus caras; sobre las superficies del cilindro 
+                                        hay tres vectores diferenciales de área \( d\vec{A} \), dos en las tapas y uno en
+                                         la pared cilíndrica; sobre la superficie esférica se muestran algunos 
+                                         vectores diferenciales de área \( d\vec{A} \).
+                                        </em>
+                                    </p>
+                                </div>                                
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <!--flujo neto-->
+                        <div class="container" id=""> 
+                            <div class="row">
+                            <h3>Flujo neto</h3>                            
+                            </div>
+                        </div>
+
+                        <p class="" style="font-size: 20px; color:#777777;"> 
+                            El flujo eléctrico neto se define como el flujo que sale 
+                            menos el flujo que entra en una superficie cerrada. Su expresión matemática es:                                  
+                        </p>
+
+                        <!--ecuacion 3-->
+                    <p class="text-center h3" style="font-size: 20px; color:#777777;">
+                        \begin{equation} \tag{3}
+                        \Phi_{E}=\oint \vec{E}\cdot d\vec{A}, 
+                        \end{equation}
+                    </p>
+                    
+                    <p class="" style="font-size: 20px; color:#777777;"> 
+                        donde el símbolo \( \oint \) indica una integral de superficie
+                         cerrada. <br>
+                         Consideremos el caso de unas superficies cerradas 
+                         dentro de un campo uniforme, como vemos en la Figura V. En 
+                         V (\( a \)) y (\( b \)), tenemos un cilindro para el cual podemos expresar el flujo neto
+                          como la suma de los flujos a través de  su tapa 
+                          izquierda \( (I) \), su pared cilíndrica  \((II)\) y su tapa derecha \( (III) \):
+                          
+                    </p>
+
+                    <!--ecuacion 4-->
+                    <p class="text-center h3" style="font-size: 20px; color:#777777;">
+                        \begin{equation} \tag{4}
+                        \Phi _{E}=\int_{I} \vec{E}\cdot d\vec{A}\:+\:\int_{II} \vec{E}\cdot d\vec{A}\:+\:\int_{III} \vec{E}\cdot d\vec{A}\:. 
+                        \end{equation}
+                    </p>
+
+                    <!--Figura 5-->                    
+                    <div class="row justify-content-center">
+                        <div class="card text-center" style="width: 50rem;">
+                            <img src="img/Figura V.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text" style="font-size: 14px; color:#777777;"><em>Figura V. 
+                                    Distintas superficies cerradas, con forma de cilindro \( (a) \) y \( (b) \), cubo \( (c) \)
+                                    y esfera \( (d) \), dentro de un campo eléctrico uniforme representado por líneas 
+                                    de fuerza que van de izquierda a derecha. En \( (a) \), se muestran vectores 
+                                    diferenciales de área \( d\vec{A} \) en la tapa izquierda \( (I) \), en la pared cilíndrica
+                                    \( (II) \) y en la tapa derecha \( (III) \). Las líneas de fuerza 
+                                    entran por \( I \) y salen por \( III \), mientras que por \( II \)
+                                    no atraviesa ninguna línea. En \( (b) \), el mismo cilindro se ha rotado y 
+                                    todas las líneas que entran salen por distintas partes de él. Lo mismo ocurre en
+                                    \( (c) \) y \( (d) \).
+
+                                    </em>
+                                </p>
+                            </div>                                
+                        </div>
+                    </div>                    
+
+                    <p class="" style="font-size: 20px; color:#777777;"> 
+                        <br>
+                        Observamos que todas las líneas de fuerza que entran por un lado de la superficie cerrada salen por otro, lo cual significa 
+                        que el flujo a través del cilindro es igual a cero. Lo mismo ocurriría si en lugar del 
+                        cilindro estuviera cualquier otra superficie cerrada (Figura V \( (c) \) y \( (d) \)).                         
+                    <br>
+                        Entonces, ¿el flujo neto siempre será igual a cero? La respuesta es no. Si pensamos de 
+                        nuevo en una carga puntual y la encerramos con una superficie en forma de cubo (Figura VI \( (a) \)), veremos
+                        que todas las líneas de fuerza salen de ella, generando un flujo neto 
+                        positivo, diferente de cero. Si la carga fuera negativa, todas las líneas de fuerza entrarían 
+                        en el cubo y generarían un flujo de signo negativo. Entonces, siempre que una superficie 
+                        encierra una carga neta el flujo es distinto de cero. Dicha carga neta es la suma de todas 
+                        las cargas positivas y negativas encerradas y en ocasiones el resultado de 
+                        esta suma puede ser igual a cero, como ocurre en el caso del dipolo que podemos ver en 
+                        la Figura VI \( (b) \) o la <a target="_blank" href="https://dipoloe-enc.glitch.me/">visualización correspondiente</a>. 
+                        Cuando esto sucede el flujo neto es cero.
+                    </p>
+
+                         <!--Figura 6-->                    
+                    <div class="row justify-content-center">
+                        <div class="card text-center" style="width: 50rem;">
+                            <img src="img/Figura VI.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text" style="font-size: 14px; color:#777777;"><em>Figura VI. 
+                                    \( (a) \) Una carga puntual positiva es encerrada por una superficie imaginaria
+                                    en forma de cubo. Las líneas de fuerza atraviesan la superficie 
+                                    de adentro hacia afuera, generando un flujo neto positivo. \( (b) \)
+                                    Un dipolo es encerrado por una superficie con forma de prisma y la misma cantidad de líneas de 
+                                    fuerza atraviesan la superficie hacia afuera y hacia adentro, 
+                                    generando un flujo neto igual a cero. Sólo mostramos las líneas de fuerza
+                                    en el plano \(xy\). 
+                                    </em>
+                                </p>
+                            </div>                                
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--La ley de Gauss-->
+                    <div class="container" id=""> 
+                        <div class="row">
+                        <h3>La ley de Gauss</h3>
+
+                        <p class="" style="font-size: 20px; color:#777777;"> 
+                            Como hemos visto, el flujo eléctrico neto a través de una superficie cerrada 
+                            es distinto de cero sólo si ésta encierra una carga neta. Esto constituye 
+                            la formulación de la ley de Gauss, como la enunciamos al principio, 
+                            así que ahora podemos retomarla y expresarla en su forma integral:                              
+                        </p>
+                        </div>
+                    </div>
+
+                    <!--ecuacion 5-->
+                    <p class="text-center h3" style="font-size: 20px; color:#777777;">
+                        \begin{equation} \tag{5}
+                        \oint \vec{E}\cdot d\vec{A}=\frac{1}{\epsilon _{0}}q,
+                        \end{equation}
+                    </p>
+
+                    <p class="" style="font-size: 20px; color:#777777;"> 
+                        donde el lado izquierdo de la ecuación representa el flujo neto del campo eléctrico, \( q \)
+                        la carga neta encerrada por la superficie gaussiana y \( \epsilon _{0} \) es la constante de
+                        permitividad eléctrica del vacío \( (\epsilon _{0}\approx 8.85\times 10^{-12}\: C^{2}/Nm^{2}) \).
+                    </p>
+
+                    <!--Aplicación de la ley de Gauss-->
+                    <div class="container" id=""> 
+                        <div class="row">
+                        <h3>Aplicaciones de la ley de Gauss</h3>
+
+                        <p class="" style="font-size: 20px; color:#777777;"> 
+                            Puesto que el flujo eléctrico a través de una superficie gaussiana que encierra una carga neta \( q \) es proporcional a dicha carga, independientemente
+                            de la superficie elegida, surge la pregunta ¿tendrá alguna utilidad elegir entre una superficie gaussiana u 
+                            otra? La respuesta es sí, ya que para estimar el campo eléctrico por medio de la ley de Gauss debemos tomar en cuenta la siguiente idea:
+                                                        
+                        </p>
+
+                        <div class="container">
+                        <p class="" style="font-size: 20px; color:#777777;" align="center"><i>
+                            La simetría de la distribución de carga sugiere la forma ideal de la superficie gaussiana.
+                            <br>
+                        </i></p>                        
+                    </div>
+
+                        <p class="" style="font-size: 20px; color:#777777;"> 
+                            Para entender mejor esto, hagamos el ejercicio de decidir qué superficie gaussiana
+                             es idónea para encerrar una carga puntual y aplicar la ley de Gauss. Si optamos por una superficie en forma de
+                              cubo, en diferentes puntos de ésta será distinto el ángulo entre los vectores de campo \( \vec{E} \) y los vectores 
+                              diferenciales de área \( d\vec{A} \), también la distancia desde la carga y, por lo tanto, la intensidad del campo.                              
+                              En estas condiciones, tendríamos que expresar la integral de superficie cerrada como la suma de los productos escalares
+                              definidos para cada punto sobre las superficies del cubo, un cálculo con un número muy 
+                              grande de operaciones. Con ayuda de la Figura VII \( (a) \) podemos observar esta situación física.
+                              <br>
+                              Si en lugar de usar una superficie con forma de cubo usamos una esférica, de tal forma que su centro y la posición de la carga coincidan,
+                               para cualquier punto sobre la superficie esférica la dirección de los vectores de campo y los vectores diferenciales de área
+                                será la misma, así como la distancia desde la carga hasta el punto considerado y la intensidad del 
+                                campo, como podemos observar en la Figura VII \( (b) \) y en la <a target="_blank" href="https://ley-gauss-cp.glitch.me/">
+                                visualización correspondiente</a>.
+                        </p>
+                        </div>
+                    </div>
+
+                    <!--Figura 7-->                    
+                    <div class="row justify-content-center">
+                        <div class="card text-center" style="width: 50rem;">
+                            <img src="img/Figura VII (2).svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text" style="font-size: 14px; color:#777777;"><em>Figura VII. \( (a) \)
+                                    Una carga puntual positiva es encerrada por una una superficie con forma de cubo,
+                                    de esta manera el ángulo entre los vectores de campo \( \vec{E} \) y diferenciales de área \( d\vec{A} \)
+                                    es distinto en diferentes puntos de la superficie. \( (b) \)                                                                        
+                                    Una superficie esférica encierra una la carga positiva ubicada en su centro, de esta manera el ángulo entre los vectores de campo
+                                    \( \vec{E} \) y diferenciales de área \( d\vec{A} \) es el mismo en todos los puntos y el campo es uniforme 
+                                    sobre toda la superficie. Sólo mostramos las líneas de fuerza
+                                    en el plano \(xy.\)
+                                    </em>
+                                </p>
+                            </div>                                
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <p class="" style="font-size: 20px; color:#777777;"> 
+                        Puesto que en este caso el campo es uniforme sobre toda la superficie, éste puede salir de
+                         la integral. A continuación, al integrar el diferencial de área obtenemos el área correspondiente
+                          a la superficie de la esfera:                         
+                    </p>
+
+                    <!--ecuacion 6-->
+                    <p class="text-center h3" style="font-size: 20px; color:#777777;">
+                        \begin{equation} \tag{6}
+                        \oint \vec{E}\cdot d\vec{A}=\oint \left | \vec{E} \right |\left | d\vec{A} \right |cos(0^{\circ})=E\oint d\vec{A}=EA=E(4\pi r^{2}).
+                        \end{equation}
+                    </p>
+
+                    <p class="" style="font-size: 20px; color:#777777;"> 
+                        Ahora, para llegar a la expresión que buscamos, igualamos este resultado con el lado derecho de la ley de Gauss:
+                    </p>
+
+                    <!--ecuacion 7-->
+                    <p class="text-center h3" style="font-size: 20px; color:#777777;">
+                        \begin{equation} \tag{7}
+                        E(4\pi r^{2})=\frac{1}{\epsilon _{0}}q. 
+                        \end{equation}
+                    </p>
+
+                    <p class="" style="font-size: 20px; color:#777777;"> 
+                        Finalmente, despejamos el término que nos interesa, quedando la ecuación de la siguiente forma:
+                    </p>
+
+                    <!--ecuacion 8-->
+                    <p class="text-center h3" style="font-size: 20px; color:#777777;">
+                        \begin{equation} \tag{8}
+                        E=\frac{1}{4\pi\epsilon _{0} r^{2}}q. 
+                        \end{equation}
+                    </p>
+
+                    <p class="" style="font-size: 20px; color:#777777;"> 
+                        Con este ejemplo, acabamos de mostrar que la ley de Gauss es más fundamental que la ley de Coulomb,
+                         puesto que, si empleamos el resultado anterior y también la definición del campo eléctrico (Ec. 1),
+                          podemos llegar a la ley de Coulomb para la fuerza eléctrica entre dos cargas puntuales:
+                    </p>
+
+                    <!--ecuacion 9-->
+                    <p class="text-center h3" style="font-size: 20px; color:#777777;">
+                        \begin{equation} \tag{9}
+                        F_{E}=\frac{1}{(4\pi \epsilon _{0})}\frac{qq_{0}}{r^{2}}.
+                        \end{equation}
+                    </p>
+
+                    <p class="" style="font-size: 20px; color:#777777;"> 
+                        Ahora, consideremos el caso de un segmento de una línea muy larga con densidad lineal de carga \( \lambda \) positiva y uniforme:
+                    </p>
+
+                    <!--ecuacion 10-->
+                    <p class="text-center h3" style="font-size: 20px; color:#777777;">
+                        \begin{equation} \tag{10}
+                        \lambda=\frac{Q}{L},
+                        \end{equation}
+                    </p>
+
+                    <p class="" style="font-size: 20px; color:#777777;"> 
+                        donde \( Q \) es la carga total en la línea y \( L \) es la longitud de la línea. <br>
+                        Las líneas de fuerza alrededor de la distribución de 
+                        carga forman un patrón simétrico con respecto a un eje que coincide con la línea de carga, siempre y cuando
+                        consideremos un segmento lejos de los extremos. 
+                        En la Figura VIII, mostramos este patrón proyectado sobre el plano \( xy \), y 
+                        en la <a target="_blank" href="https://ley-gauss-linea.glitch.me/">visualización correspondiente</a> 
+                        lo podemos observar en tres dimensiones. Esta simetría nos sugiere usar una 
+                        superficie gaussiana cilíndrica cuyo eje sea colineal con la línea de carga.
+                        Así, sobre la pared 
+                        cilíndrica \( II \), los vectores de campo \( \vec{E} \) y diferenciales 
+                        de área  \( d\vec{A} \) tienen la misma dirección y el campo es uniforme,
+                        puesto que la distancia \( r \) desde la línea hasta cualquier punto de la pared
+                        cilíndrica es la misma. Por otro lado, a través de las tapas, donde dichos vectores son
+                        ortogonales entre sí, el producto escalar es igual a cero, y por lo tanto el flujo también lo es. <br>
+                        <!--
+                        En la Figura VIII podemos ver el patrón de las líneas de fuerza sobre el plano \( xy \).
+                        Como podemos ver en la Figura VIII, las líneas de fuerza alrededor de la distribución de 
+                        carga forman un patrón simétrico con respecto a un eje que coincide con la línea de carga, lo cual nos sugiere usar una 
+                        superficie gaussiana cilíndrica, cuyas tapas \( I \) y \( III \) sean ortogonales a la línea de carga. Así, sobre la pared 
+                        cilíndrica \( II \), los vectores de campo \( \vec{E} \) y diferenciales 
+                        de área  \( d\vec{A} \) tienen la misma dirección y el campo es uniforme, puesto que la distancia \( r \) desde 
+                        la línea hasta cualquier punto de la pared cilíndrica es la misma. Por otro lado, a través de las tapas, donde 
+                        dichos vectores son ortogonales entre sí, el producto escalar, y por lo tanto el flujo, son iguales a cero. -->
+                    </p>
+
+                    <!--Figura 8-->                    
+                    <div class="row justify-content-center">
+                        <div class="card text-center" style="width: 50rem;">
+                            <img src="img/Figura VIII.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text" style="font-size: 14px; color:#777777;"><em>Figura VIII. 
+                                    Un segmento de línea de carga positiva es encerrado por una superficie gaussiana con forma de cilindro de radio \( r \)
+                                    y longitud \( h \). 
+                                    En cualquier punto de la pared cilíndrica \( II \) el campo eléctrico 
+                                    \( \vec{E} \) es uniforme y paralelo a los vectores 
+                                    diferenciales de área \( d\vec{A} \), mientras que, sobre las tapas \( I \) y \( III \), estos vectores son ortogonales. 
+                                    Los bordes ondulados de la línea de carga indican que la línea se prolonga hacia ambos lados.
+                                    Unicamente mostramos las líneas de fuerza en el plano \( xy \). 
+                                    </em>
+                                </p>
+                            </div>                                
+                        </div>
+                    </div>
+                    <br>
+
+                    <p class="" style="font-size: 20px; color:#777777;"> 
+                        Tomando en cuenta la simetría que acabamos de analizar y retomando 
+                        la Ec. 4, al resolver las integrales obtenemos: 
+
+                    <!--ecuacion 11-->
+                    <p class="text-center h3" style="font-size: 20px; color:#777777;">
+                        \begin{equation} \tag{11}
+                        0+\int\left | \vec{E} \right | \left | d\vec{A}_{II} \right | cos (0^{\circ})+0=E\int dA_{II}=EA_{II}=E(2\pi rh),
+                        \end{equation}
+                    </p>
+
+                    <p class="" style="font-size: 20px; color:#777777;"> 
+                        donde \( r \) es la distancia entre la línea de carga y la pared cilíndrica y \( h \) es la longitud del cilindro.
+                        A diferencia de la situación que presentamos en la Figura V \( (a) \) y \( (b) \), aquí observamos un 
+                        resultado distinto de cero para el flujo, puesto que ahora la superficie gaussiana
+                        sí encierra una carga neta.
+                        A continuación, igualamos el resultado anterior con el lado derecho de la ley de Gauss, tomando en cuenta que la carga neta 
+                        encerrada también depende de la longitud de la superficie gaussiana que escogimos \( q=h\lambda  \):
+                    </p>
+
+                    <!--ecuacion 12-->
+                    <p class="text-center h3" style="font-size: 20px; color:#777777;">
+                        \begin{equation} \tag{12}
+                        E(2\pi rh)=\frac{1}{\epsilon _{0}}(h\lambda ).
+                        \end{equation}
+                    </p>
+
+                    <p class="" style="font-size: 20px; color:#777777;"> 
+                        Finalmente, despejamos el término que nos interesa para encontrar el campo eléctrico a una distancia \( r \) de la línea de carga:
+                    </p>
+
+                    <!--ecuacion 13-->
+                    <p class="text-center h3" style="font-size: 20px; color:#777777;">
+                        \begin{equation} \tag{13}
+                        E=\frac{h\lambda}{\epsilon _{0}(2\pi rh)}=\frac{\lambda}{2\pi\epsilon _{0}r}.
+                        \end{equation}
+                    </p>
+
+                    <p class="" style="font-size: 20px; color:#777777;"> 
+                        En la sección Visualizaciones podremos observar en realidad aumentada lo que vimos en las figuras anteriores.
+                    </p>
+ 
+            <!--fuentes-->
+            <p style="font-style: italic; font-size: 13px; color:#777777;">
+                Fuentes: <br> 
+                Halliday, D., Resnick, R. y Krane, K. (1999). Física Volumen 2. México: Compañía Editorial
+                Continental.<br>
+                Purcell, E. & Morin, D. (2013). Electricity and magnetism. Estados Unidos de América: Cambridge University Press.
+            </p>
+            <!--fin fuentes-->
+
+            <br>
+            <br>
+            <!--Instrucciones Visualizaciones -->
+            <div class="container" id="Instrucciones">
+                <h2 class="linea_titule text-center my-4">Instrucciones para usar las visualizaciones</h2>
+                <p class="" style="font-size: 20px; line-height: 34px; color:#777777;">Para poder observar cualquiera de las
+                    visualizaciones en
+                    realidad aumentada (RA) que aparecen en esta página de internet necesitas contar con:
+                </p>
+                <!--lista de instrucciones-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group" style="color:#777777;">
+                            <li class="list-group-item list-group-item-white">
+                                Marcador, ya sea que decidas imprimirlo o que
+                                pueda ser visible a través de una pantalla distinta a la que usarás para observar la RA,
+                                puedes descargar el marcador haciendo clic en la siguiente imagen</li>
+                            <li class="list-group-item list-group-item-white">
+                                Un dispositivo móvil o computadora con navegador de internet</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group" style="color:#777777;">
+                            <li class="list-group-item list-group-item-white">Conexión a internet</li>
+                            <li class="list-group-item list-group-item-white">La cámara integrada en tu dispositivo
+                                móvil, laptop o en su caso una
+                                webcam</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="row justify-content-center">
+                    <div align="center">
+                        <a href="https://drive.google.com/file/d/1gOBpPyrdpQYCCzaXdt1xfkYMfFNt-ISg/view?fbclid=IwAR2ZY6och_1lcVxkMgT8c-pCw90wgWoWh6c_XMc0m8hiHkQtBzKeECUvrkY"
+                            target="_blank"> <img class="img_horizo" width="400" height="400"
+                                src="img/marcador.png"></a>
+                    </div>
+                </div>
+                <!--fin lista de instrucciones-->
+                                
+                <!--sugerencias-->
+                <p class="" style="font-size: 30px;">Sugerencias:</p>
+                
+                <div class="container">
+                    <div class="container">
+                        <p class="" style="font-size: 20px; color:#777777;">Recuerda que puedes imprimir el marcador del tamaño que
+                            prefieras, sólo debes
+                            tener
+                            cuidado de
+                            mantenerlo completamente visible durante la visualización. Para obtener el tamaño que te
+                            acomode,
+                            cambia la distancia del marcador a la cámara.</p>
+                        <p class="" style="font-size: 20px; color:#777777;">Puedes desplegar las visualizaciones en el dispositivo que
+                            prefieras. Si necesitas mayor libertad de movimiento entre la cámara y el marcador, puedes usar un dispositivo móvil.</p>
+                    </div>                    
+                </div>
+                <!--fin sugerencias-->
+                
+                <!--pasos-->
+                <div class="sec_left">
+                    <p class="" style="font-size: 30px;">Los pasos a seguir son los siguientes:</p>
+                    
+                    <ol style="font-size: 20px; color:#777777;">
+                        <li class="num_list">Haz clic en el enlace a la visualización en RA que te interesa observar
+                        </li>
+                        <li class="num_list">
+                            Si la cámara o webcam no se activa automáticamente, selecciona la opción "Permitir usar la
+                            cámara" cuando el navegador de internet lo solicite"
+                            <a target="?_blank"
+                                href="https://drive.google.com/file/d/1v4Goh4Ymsv3HiomuIxZOtEhYVYaMAzQX/view?fbclid=IwAR1fDqq3elwIH0F2wJGVTn7Fjlv5bgDEs1GjseEBFGT5XNTT9whdsJWJkfg"><span>haz
+                                    clic aquí para ver una imagen de ejemplo de este paso</span></a>
+
+                        </li>
+                        <li class="num_list">
+                            Cuando la cámara o webcam comience a funcionar, coloca el marcador frente a ella para que
+                            sea
+                            reconocido
+                        </li>
+                        <li class="num_list">
+                            Una vez reconocido el marcador, podrás observar la visualización en RA
+                        </li>
+                        <li class="num_list">
+                            Puedes colocar el marcador frente a la cámara en distintas posiciones, acercarlo, alejarlo o
+                            girarlo de tal forma que puedas observar distintas partes o detalles en cada visualización
+                        </li>
+                        <li class="num_list">
+                            En las visualizaciones, indicamos con letras las cantidades físicas que representamos, pero
+                            para
+                            obtener un panorama más completo de estas cantidades puedes usar el "Código de colores".
+                        </li>
+                    </ol>
+                </div>
+                <!--fin pasos-->
+            </div>
+            <!--fin Instrucciones-->
+            <br>
+
+            <!--codigo de colores-->
+            <div class="container" id="CodigoColores">
+                <section class="main-section" id="CodigoColor">
+                    <h2 class="linea_titule text-center">Código de colores</h2>
+                    <div class="container">
+                        <div>
+                            <p class="" style="font-size: 20px; color:#777777;">Para entender las visualizaciones, es necesario
+                                conocer el significado de los
+                                colores en los
+                                elementos representados, usa el siguiente código de colores:</p>
+                            <div align="center">
+                                <img class="img_horizo" width="930" height="570" src="img/Código colores Gauss9.svg">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--fin codigo de colores-->
+
+            <!--Visualizaciones-->
+            <div class="container" id="Visualizaciones">
+                <p class="h2 text-center">Visualizaciones</p>
+                <div class="container">
+                    <p class="" style="font-size: 20px; color:#777777;">
+                        Las siguientes visualizaciones forman parte del proyecto EducAR, y su objetivo es facilitar
+                         a los estudiantes de Electricidad y Magnetismo, particularmente de la carrera de Ingeniería en Computación
+                         , el entendimiento de la Ley de Gauss con ayuda de Realidad Aumentada. Todas las visualizaciones 
+                         funcionan con un mismo marcador.
+                    </p>
+                </div>
+                <br>
+                <!--lista de visualizaciones-->
+                <ul>
+                    <li><a target="_blank" href="https://1campou-plano.glitch.me/">
+                            <p style="color: black; font-size: 25px;"> <u> Flujo de un campo eléctrico uniforme a través de un plano</p></u>
+                        </a>
+                        <p style="font-size: 20px; color:#777777;">
+                            Una superficie plana cambia su orientación en una región con un campo eléctrico 
+                            uniforme. Podemos notar que el número de líneas que atraviesan la superficie es mayor o menor
+                             dependiendo de su inclinación con respecto a las líneas de fuerza, lo cual nos
+                              da una medida intuitiva del flujo del campo a través de él.                              
+                        </p>
+                    </li>
+                    <li><a target="_blank" href="https://dipoloe-enc.glitch.me/">
+                            <p style="color: black; font-size: 25px;"> <u> Flujo neto</p></u>
+                        </a>
+                        <p style="font-size: 20px; color:#777777;">
+                            Un dipolo es encerrado por completo (prisma) o sólo parcialmente (esfera y cubo) 
+                            por superficies cerradas. Cuando el prisma contiene el dipolo, la carga neta encerrada es igual a cero y
+                            el flujo a través de dicha 
+                            superficie también lo es, puesto que la misma cantidad de líneas de fuerza que salen del prisma vuelven a entrar.                                                                                     
+                            Por otro lado, cuando la esfera encierra una carga neta positiva, distinta de cero, las líneas de fuerza sólo salen de 
+                            ella, dando lugar a un flujo neto positivo, mientras que, en el caso del cubo, que encierra una carga negativa, ocurre 
+                            lo opuesto.
+                        </p>
+                    </li>
+                    <li><a target="_blank" href="https://ley-gauss-cp.glitch.me/">
+                            <p style="color: black; font-size: 25px;"> <u> Aplicación de la ley de Gauss: el campo eléctrico debido a una carga
+                                puntual positiva
+                            </p></u>
+                        </a>
+                        <p style="font-size: 20px; color:#777777;">
+                            Una carga puntual positiva es encerrada por superficies gaussianas
+                            que son atravesadas por las líneas de fuerza del campo eléctrico \( \vec{E} \).
+                            <br>
+                            Primero, la carga se ubica en el centro de una superficie con forma de cubo, sobre la cual representamos
+                            dos vectores diferenciales de área \( d\vec{A} \). A su vez, dos vectores de 
+                            posición ( \( \vec{r}_{1} \) y \( \vec{r}_{2} \)) indican que dos puntos sobre la superficie no están a la misma
+                             distancia de la carga.  Además, el ángulo entre dichas líneas de fuerza y los vectores
+                             diferenciales de área es distinto en diferentes puntos de la superficie. 
+                             En estas condiciones, 
+                             no es posible aplicar la ley de Gauss para estimar el campo eléctrico.
+                            <br>
+                            A continuación, una superficie esférica encierra la misma carga en su centro, 
+                            de esta manera el campo \( \vec{E} \) sobre
+                            la superficie es uniforme. Elegimos representar
+                             un sólo vector diferencial de área \( d\vec{A} \) en un punto sobre la superficie, donde podemos observar 
+                             que el ángulo entre dicho vector y el campo es cero. 
+                             Lo mismo ocurriría para cualquier otro punto de la esfera.
+                             Considerando todos estos elementos, podemos concluir que la superficie esférica sí
+                             nos permite aplicar la ley de Gauss para calcular el campo eléctrico.
+                            
+                        </p>
+                    </li>
+                    <li><a target="_blank" href="https://ley-gauss-linea.glitch.me/">
+                            <p style="color: black; font-size: 25px;"> <u>Aplicación de la ley de Gauss: el campo eléctrico debido a una sección de una línea de carga </p></u>
+                        </a>
+                        <p style="font-size: 20px; color:#777777;">
+                            Representamos un segmento de una distribución de cargas puntuales positivas sobre una línea muy larga, 
+                            con una densidad de carga uniforme \( Q/L \), junto con sus líneas de fuerza.
+                            <br> 
+                            La simetría del campo creado por esta distribución de cargas nos sugiere
+                            usar una superficie gaussiana cilíndrica, cuyo eje coincida con la línea, para encerrar una parte de ellas. 
+                            Mostramos esta superficie con tres vectores diferenciales de área \( d\vec{A} \). 
+                            De esta manera, el campo 
+                            es uniforme y normal a la superficie en todos los puntos de la pared cilíndrica. 
+                            Por otro lado, en las tapas el campo es paralelo a la superficie y el flujo es cero.
+                            Bajo esta situación, podemos aplicar la ley de Gauss para encontrar el valor del campo a una distancia \( r \) de la línea de carga.
+                        </p>
+                    </li>
+                </ul>
+            </div>            
+            <hr>
+
+            <!--Contacto-->
+            <div class="container">
+                <h2 class="text-center">Información de Contacto</h2>
+                <br>
+                <div class="row">
+                    <div class="col-4 text-right my-3">
+                        <p style="color:#777777;">DIRECCIÓN:</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="" style="color:#777777;">Centro Tecnológico Aragón, segundo piso, Cubículos académicos 2, Cubículo 4,
+                            Facultad de Estudios Superiores Aragón, Universidad Nacional Autónoma de México, Avenida Rancho Seco
+                            S/N, Col. Impulsora Popular Avícola, Nezahualcóyotl, Estado de México 57130, México.</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-left">
+                            <a
+                            target="_blank" href="https://www.facebook.com/cosmocta/?view_public_for=1819870644983707&ref=page_internal"><img
+                                    src="img/f.png" width="50" height="50" class="rounded" alt="..."></a>
+                            <a target="_blank" href="https://gpb-cosmo.github.io/person/index.html"><img
+                                    src="img/doc.PNG" width="59" height="58" class="rounded" alt="..."></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Fin contacto-->
+
+
+            <!--Creditos-->
+            <div class="container py-5">
+                <p class="h2 text-center">Créditos</p>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto text-center">
+                        <div class="card text-center" style="width: 20rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Gabriella Piccinelli Bocchi:</h5>
+                                <p class="card-text" style="color:#777777;">Responsable académica, supervisión del contenido científico y
+                                    de la construcción de los materiales
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto text-center">
+                        <div class="card text-center" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Pedro Uriel Martínez Martínez:
+                                </h5>
+                                <p class="card-text" style="color:#777777;">
+                                    Idea original y construcciónde de la plataforma. 
+                                    <br>
+                                    Información sobre la ley de Gauss y descripción de las visualizaciones en realidad aumentada.
+                                    <br>
+                                    Elaboración de las visualizaciones en realidad aumentada
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto text-center">
+                        <div class="card text-center" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Carlos Alberto Hernández García y Gabriel Emmanuel Monroy Romo:</h5>
+                                <p class="card-text" style="color:#777777;">Elaboración de los modelos en 3D para las visualizaciones en realidad aumentada.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto text-center">
+                        <div class="card text-center" style="width: 24rem;">
+                            <div class="card-body">
+                                <h5 class="card-title">Carole King:</h5>
+                                <p class="card-text" style="color:#777777;">
+                                    Revisora de los materiales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- fin Creditos-->
+        </div>
+    </div>
+    <!--fin container main-->
+
+    <!--Pie de la Pagina-->
+    <footer align="center" style="background-color: black">
+        <div class="container text-light" style="background-color: black">
+            <br>
+            <h3 href="https://gpb-cosmo.github.io/EducAR.github.io/">
+                ​​​​Recurso desarrollado con el apoyo del proyecto UNAM-DGAPA-PAPIME PE110418 "Realidad aumentada en la docencia para ingeniería"
+            </h3>
+
+            <img class="img-fluid maxheight: auto text-center" alt="Responsive image" width="600" height="124"
+                src="img/pie.png">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            </a>
+            <br><span> Ésta obra está bajo una </span>
+            <a class="text-light" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licencia
+                de Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional</a>.
+        </div>
+    </footer>
+
+
+    <!--Scripts para el funcionamiento de Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
