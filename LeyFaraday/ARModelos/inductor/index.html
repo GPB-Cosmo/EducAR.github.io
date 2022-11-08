@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="" />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Motor Electrico!</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta name="description" content="A simple website, built with Glitch. Remix it to get your own." />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hello World!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta property="og:description" content="A simple website, built with Glitch. Remix it to get your own." />
+    <meta property="og:image" content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147" />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+
+    <!-- Import the webpage's javascript file -->
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+
+</head>
+
+<body id="body" style="margin: 0px; overflow: hidden">
+    <!-- <audio controls>
+        <source src="assets/audio/WIND1.mp3" type="audio/mp3">
+            
+    </audio> -->
+    <a-scene embedded arjs>
+        <a-assets>
+            <!--Modelo-->
+            <a-asset-item id="elices" src="assets/elices.dae"></a-asset-item>
+            <a-asset-item id="motor" src="assets/Generador.dae"></a-asset-item>
+            <a-asset-item id="focoAp" src="assets/focoApagado.dae"></a-asset-item>
+            <a-asset-item id="focoEnc" src="assets/focoPrendido.dae"></a-asset-item>
+        </a-assets>
+
+        <a-marker id="marcador" preset="hiro">
+            <br>
+
+
+            <a-entity id="div" class="elices" collada-model="#elices" rotation="-120 -90 90" position=" -0.45  0.2 -0.5" scale="0.6 0.6 0.6">
+
+
+            </a-entity>
+
+
+        </a-marker>
+
+        <a-entity camera></a-entity>
+    </a-scene>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

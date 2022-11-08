@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sin corriente</title>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+        <a-assets>
+            <a-asset-item id="base" src="../exp2Faraday/assets/base.dae"></a-asset-item>
+            <a-asset-item id="multimetro" src="../exp2Faraday/assets/multimetro2.dae"></a-asset-item>
+            <a-asset-item id="flecha" src="../exp2Faraday/assets/flecha.dae"></a-asset-item>
+
+        </a-assets>
+        <a-marker preset='hiro'>
+            <a-entity collada-model="#base" scale="1 1 1" position="0 0 0.8" rotation="" visible="">
+
+            </a-entity>
+            <a-entity collada-model="#multimetro" scale="1 1 1" position="0 0 0" rotation="0 0 45" visible="">
+
+            </a-entity>
+            <a-entity collada-model="#flecha" scale="0.3 0.3 0.3" position="-0.095 0.127 0.039" rotation="0 0 45" visible="true">
+
+            </a-entity>
+            </a-entity>
+
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+
+
+
+</html>
