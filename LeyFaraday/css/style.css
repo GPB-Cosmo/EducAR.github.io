@@ -1,0 +1,134 @@
+.back-blue {
+    background-color: #0077c8;
+
+}
+
+p,h4 {
+
+    -webkit-text-stroke: 0.04px rgb(255, 255, 255);
+    font-family: arial;
+}
+
+h1 {
+    -webkit-text-stroke: 0.6px rgb(255, 255, 255);
+    
+}
+.titule {
+    font-size:600%;
+    text-align: center;
+    -webkit-text-stroke: 0.6px rgb(255, 255, 255);
+    margin: auto;
+    position: relative;
+    font-family: serif;
+    
+    width: 100%;
+    color: #0077c8;
+    
+}
+.subTitule{
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+
+
+.back-body {
+    background-color: rgb(246, 246, 246);
+}
+
+.back-educar::before {
+
+    opacity: 0.1;
+}
+
+#buttonArriba {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+}
+
+.ir-arriba {
+    display: flex;
+    padding: 20px;
+    background: #0077c8;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+}
+
+.parallax {
+
+    width: 100%;
+    height: 600px;
+    background: url("../img/espira.jpg");
+    background-size: 100% 80%;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.parallax-img{
+    width: 100%;
+    height: 500px;
+    background: url("../img/exp.JPG");
+    background-size: 50% 50%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+@media (min-width:50px) {
+    .parallax {
+        height: 300px;
+        
+    }
+    .titule{
+        font-size:200%;
+
+    }
+}
+
+@media (min-width:376px) {
+    .parallax {
+        height: 400px;
+    }
+    .titule{
+        font-size:300%;
+    }
+}
+
+@media (min-width:768px) {
+    .parallax {
+        height: 400px;
+    }
+    .titule{
+        font-size:400%;
+    }
+}
+@media (min-width:992px) {
+    .parallax {
+        height: 600px;
+    }
+    .titule{
+        font-size:600%;
+    }
+}
+
+footer{
+    background-color: black;
+    background-size: 100px;
+
+}
